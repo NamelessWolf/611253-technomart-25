@@ -24,7 +24,7 @@
     </div>
     <p class="user">
         Равшан Джамшутович
-        <button class="exit" type="button"></button>
+        <button class="exit" type="button">Выйти</button>       
         <ul class="user-cabinet">
                 <li>
                     <a href="#">Мои заказы</a>
@@ -75,44 +75,60 @@
 </ul>
 <h1 class="inner">Перфораторы</h1>
 <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <h2>Фильтр</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-     <legend>Производители:</legend>
+          <fieldset>
+            <legend>Производители:</legend>
             <ul>
+              <li class="option">
+                <label>
+                <input class="visually-hidden input checkbox" type="checkbox" name="bosch" checked>
+                Bosch
+                </label>
                 <li class="option">
-                    <input class="visually-hidden input checkbox" type="checkbox" name="bosch" checked>
-                    <label for="filter-baxter-of -california">
-                           Baxter of California</label></li>
-                <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="mr-natty">
-                    <label for="filter-mr-natty">
-                        Mr Natty</label></li>
-                <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox"name="suavecito"checked><label for="filter-suavecito">Suavecito</label></li>
-                <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="malin-goetz"><label for="filter-malin-goetz"> Malin+Goetz</label></li>
-                <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-checkbox"type="checkbox" name="murrays"><label for="filter-murrays">Murray's</label></li>
-                <li class="filter-option"> 
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="american-crew" checked><label for="filter-american-crew">
-                    American Crew</label></li>
+                <label>
+                <input class="visually-hidden input checkbox" type="checkbox" name="interskol">
+                Интерскол
+                </label>
+                <li class="option">
+                <label>
+                <input class="visually-hidden input checkbox" type="checkbox" name="makita" checked>
+                Makita
+                </label>
+                <li class="option">
+                <label>
+                <input class="visually-hidden input checkbox" type="checkbox" name="dewalt">
+                Dewalt
+                </label>
+                <li class="option">
+                <label>
+                <input class="visually-hidden input checkbox" type="checkbox" name="hitachi">
+                Hitachi
+                </label>
+              </li>
+              
             </ul>
-            </fieldset>
-            <fieldset>
-            <legend>Группы товаров:</legend>
-                <ul>
-                <li class="filter-option">
-                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave"><label for="filter-shave">Бритвенные принадлежности</label></li>
-                    <li class="filter-option">
-                       <input class="visually-hidden filter-input filter-input-radio" name="product-group" type="radio" value="hair-care" id="filter-care" checked> <label for="filter-care">Средства для ухода</label></li>
-                    <li class="filter-option">
-                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories"> <label for="filter-accessories">Аксессуары</label></li>
-                </ul>
-            </fieldset>
-            <button type="submit" class="filter-button button">Показать</button> 
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="option">
+                <label>
+                    <input class="visually-hidden input radio" type="radio" name="power-supply" value="battery">
+                    Аккумуляторные
+                </label>
+              </li>
+              <li class="option">
+                <label>
+                    <input class="visually-hidden input radio" type="radio" name="power-supply" value="mains">
+                    Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+            <button type="submit" class="button">Показать</button>
         </form>
-</section>
+      </section>
 <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов</h2>
         <ul class="list">
